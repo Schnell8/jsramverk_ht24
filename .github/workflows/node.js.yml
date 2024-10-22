@@ -8,7 +8,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./01-Refaktorisering/backend
+    working-directory: ./01-Refaktorering/backend
 
 jobs:
   build:
