@@ -1,0 +1,32 @@
+.btn {
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    font-size: 1.35em;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn.red {
+    background-color: #f44336; /* Red */
+}
+
+.btn.red:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+.btn.green {
+    background-color: #4CAF50; /* Green */
+}
+
+.btn.green:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.btn.blue {
+    background-color: #2196F3; /* Blue */
+}
+
+.btn.blue:hover {
+    background-color: #1e88e5; /* Darker blue on hover */
+}

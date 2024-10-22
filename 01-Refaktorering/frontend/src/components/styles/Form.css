@@ -1,0 +1,15 @@
+label,
+input,
+textarea,
+button {
+    display: block;
+}
+
+input,
+textarea {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}

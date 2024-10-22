@@ -1,0 +1,33 @@
+{
+  "name": "jsramverk-backend",
+  "version": "1.0.0",
+  "description": "editor for backend",
+  "main": "app.mjs",
+  "scripts": {
+    "start": "node app.mjs",
+    "dev": "nodemon app.mjs",
+    "test": "nyc --reporter=html --reporter=text --reporter=clover mocha --timeout 10000",
+    "posttest": "npm run lint",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongodb": "^6.9.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "chai-http": "^5.1.1",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react": "^7.37.1",
+    "javascript-style-guide": "^1.0.1",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.7",
+    "nyc": "^17.1.0"
+  }
+}
