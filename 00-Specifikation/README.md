@@ -14,49 +14,42 @@ It worked perfectly, 0 vulnerabilities identified.
 ### Steps to make the app work
 Use the steps below to make the app work
 
-#### 1. Clone repo
-Run command in terminal:
-
-```
-git clone git@github.com:Schnell8/jsramverk.git
-```
-
-#### 2. Create .env file
+#### 1. Create .env file
 Create a `.env` file in your directory looking like this:
 
 ```
 PORT=<your-port>
 ```
 
-#### 3. Install dotenv
+#### 2. Install dotenv
 Run command in terminal:
 
 ```
 npm install dotenv
 ```
 
-#### 4. Init database
+#### 3. Init database
 Run command in terminal:
 
 ```
 bash ./db/reset_db.bash
 ```
 
-#### 5. Create first document
+#### 4. Create first document
 Run command in terminal:
 
 ```
 echo "INSERT INTO documents (title, content) VALUES ('Initial title', 'Initial content')" | sqlite3 db/docs.sqlite
 ```
 
-#### 6. Run app
+#### 5. Run app
 Run command in terminal:
 
 ```
 node app.mjs
 ```
 
-#### 7. Open browser
+#### 6. Open browser
 Open browser and go to `localhost:3000` to check out the app.
 
 ### Frontend framework
