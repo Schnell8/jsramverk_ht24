@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import url from '../config.js';
+import { url } from '../config.js';
 
 import './styles/Form.css';
 import './styles/Button.css';

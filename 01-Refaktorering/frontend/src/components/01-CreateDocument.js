@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import url from '../config.js';
+import { url } from '../config.js';
 
 import './styles/Form.css';
 import './styles/Button.css';

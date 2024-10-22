@@ -4,12 +4,13 @@ import CreateDocument from './components/01-CreateDocument';
 import UpdateDocument from './components/02-UpdateDocument';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { basename } from './config';
 
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <Header />
       <main className="main">
         <Routes>
