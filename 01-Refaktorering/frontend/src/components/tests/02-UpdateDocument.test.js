@@ -1,10 +1,15 @@
 import { render, screen } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 import UpdateDocument from '../02-UpdateDocument';
 
 test('renders h1 "Update Document"', () => {
-    render(<UpdateDocument />);
+    render(
+        <Router>
+            <UpdateDocument />
+        </Router>
+    );
 
     const headingElement = screen.getByText(/Update Document/i);
     expect(headingElement).toBeInTheDocument();
@@ -13,7 +18,11 @@ test('renders h1 "Update Document"', () => {
 test('title variable gets value when text is entered', async () => {
     const inputValue = 'Updated Title Test';
 
-    render(<UpdateDocument />);
+    render(
+        <Router>
+            <UpdateDocument />
+        </Router>
+    );
 
     const user = userEvent.setup();
     const titleInput = screen.getByLabelText('Title');
@@ -26,7 +35,11 @@ test('title variable gets value when text is entered', async () => {
 test('content variable gets value when text is entered', async () => {
     const inputValue = 'Updated content test';
 
-    render(<UpdateDocument />);
+    render(
+        <Router>
+            <UpdateDocument />
+        </Router>
+    );
 
     const user = userEvent.setup();
     const contentInput = screen.getByLabelText('Content');

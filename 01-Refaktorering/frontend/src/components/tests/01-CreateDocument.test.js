@@ -1,10 +1,15 @@
 import { render, screen } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 import CreateDocument from '../01-CreateDocument';
 
 test('renders h1 "Create Document"', () => {
-    render(<CreateDocument />);
+    render(
+        <Router>
+            <CreateDocument />
+        </Router>
+    );
 
     const headingElement = screen.getByText(/Create Document/i);
     expect(headingElement).toBeInTheDocument();
@@ -13,7 +18,11 @@ test('renders h1 "Create Document"', () => {
 test('title variable gets value when text is entered', async () => {
     const inputValue = 'Test Title';
 
-    render(<CreateDocument />);
+    render(
+        <Router>
+            <CreateDocument />
+        </Router>
+    );
 
     const user = userEvent.setup();
     const titleInput = screen.getByLabelText('Title');
@@ -26,7 +35,11 @@ test('title variable gets value when text is entered', async () => {
 test('content variable gets value when text is entered', async () => {
     const inputValue = 'Test content';
 
-    render(<CreateDocument />);
+    render(
+        <Router>
+            <CreateDocument />
+        </Router>
+    );
 
     const user = userEvent.setup();
     const contentInput = screen.getByLabelText('Content');
