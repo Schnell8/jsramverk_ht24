@@ -5,7 +5,7 @@ Frontend for course [jsramverk](https://jsramverk.se/).
 -----------------------------
 
 ## Getting started
-Follow the one step below
+Follow the one step below to get started
 
 ### 1. Npm install
 Run command in terminal:
@@ -17,7 +17,7 @@ npm install
 -----------------------------
 
 ## Available scripts
-In the project directory, you can run:
+In the project directory, you can run these commands in terminal:
 
 ### `npm start`
 Runs the app in the development mode.

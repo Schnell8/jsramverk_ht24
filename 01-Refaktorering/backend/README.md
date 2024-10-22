@@ -5,7 +5,7 @@ Backend for course [jsramverk](https://jsramverk.se/).
 -----------------------------
 
 ## Getting started
-Follow the two steps below
+Follow the two steps below to get started
 
 ### 1. Npm install
 Run command in terminal:
@@ -15,7 +15,7 @@ npm install
 ```
 
 ### 2. .env setup
-Create .env file in root of repo looking like this:
+Create .env file in root of this dir looking like this:
 
 ```
 PORT=1337
@@ -26,7 +26,7 @@ DB_PASSWORD=<your-mongodb-password>
 -----------------------------
 
 ## Available scripts
-In the project directory, you can run:
+In the project directory, you can run these commands in terminal:
 
 ### `npm start`
 Runs the app.
