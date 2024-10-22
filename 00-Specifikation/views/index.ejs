@@ -1,0 +1,19 @@
+<%- include('includes/header'); %>
+    <h2>Documents</h2>
+    <div class="all-docs-add">
+        <a href="/add">
+            <button class="add-button" type="submit">Add document</button>
+        </a>
+    </div>
+
+    <div class="all-docs">
+        <% docs.forEach(function(doc){ %>
+            <div class="single-doc">
+                <h3><%= doc.title %></h3>
+                <a href="/edit/<%= doc.id %>">
+                    <button class="edit-button" type="submit">Edit document</button>
+                </a>
+            </div>
+        <% }); %>
+    </div>
+<%- include('includes/footer'); %>
