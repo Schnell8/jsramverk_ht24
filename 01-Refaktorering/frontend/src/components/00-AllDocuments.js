@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 import { url } from '../config.js';
 
 import './styles/Table.css';
 
 function AllDocuments() {
     const [documents, setDocuments] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         async function fetchAllDocuments() {
@@ -30,7 +32,8 @@ function AllDocuments() {
 
     // Update document
     const handleUpdateDocument = (id) => {
-        window.location.href = `/update/${id}`;
+
+        navigate(`/update/${id}`);
     };
 
     // Delete document
