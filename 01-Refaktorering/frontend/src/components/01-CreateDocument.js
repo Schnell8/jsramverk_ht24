@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { url } from '../config.js';
 
 import './styles/Form.css';
@@ -7,6 +8,7 @@ import './styles/Button.css';
 const CreateDocument = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -25,7 +27,7 @@ const CreateDocument = () => {
             }
 
             alert('Document created successfully!');
-            window.location.href = '/';
+            navigate('/');
         } catch (err) {
             console.error(err);
             alert('Failed to create document');
