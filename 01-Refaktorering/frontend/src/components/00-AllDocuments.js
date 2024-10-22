@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
 import url from '../config.js';
@@ -29,11 +28,9 @@ function AllDocuments() {
     fetchAllDocuments();
     }, []);
 
-    const navigate = useNavigate();
-
     // Update document
     const handleUpdateDocument = (id) => {
-        navigate(`/update/${id}`);
+        window.location.href = `/update/${id}`;
     };
 
     // Delete document

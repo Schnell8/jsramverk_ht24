@@ -9,13 +9,13 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/~chsc22/editor">
+    <Router>
       <Header />
       <main className="main">
         <Routes>
-            <Route path="/" element={<AllDocuments />} />
-            <Route path="/create" element={<CreateDocument />} />
-            <Route path="/update/:id" element={<UpdateDocument />} />
+          <Route path="/" element={<AllDocuments />} />
+          <Route path="/create" element={<CreateDocument />} />
+          <Route path="/update/:id" element={<UpdateDocument />} />
         </Routes>
       </main>
       <Footer />

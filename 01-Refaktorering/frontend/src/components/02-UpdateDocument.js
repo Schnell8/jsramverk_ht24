@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import url from '../config.js';
 
@@ -32,8 +31,6 @@ const UpdateDocument = () => {
     fetchDocumentById();
     }, [id]);
 
-    const navigate = useNavigate();
-
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -53,7 +50,7 @@ const UpdateDocument = () => {
             }
 
             alert('Document updated successfully!');
-            navigate('/');
+            window.location.href = '/';
         } catch (err) {
             console.error(err);
             alert('Failed to update document.');
