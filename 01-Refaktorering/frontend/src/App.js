@@ -4,7 +4,7 @@ import CreateDocument from './components/01-CreateDocument';
 import UpdateDocument from './components/02-UpdateDocument';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { basename } from './config';
+import { basename } from './config.js'
 
 import './App.css';
 
