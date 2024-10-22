@@ -1,20 +1,13 @@
-# jsramverk-frontend
+# Frontend
 
 Frontend for course [jsramverk](https://jsramverk.se/).
 
 -----------------------------
 
 ## Getting started
-Follow the steps below
+Follow the one step below
 
-### 1. Clone repo
-Run command in terminal:
-
-```
-git clone git@github.com:Schnell8/jsramverk_frontend.git
-```
-
-### 2. Npm install
+### 1. Npm install
 Run command in terminal:
 
 ```
