@@ -9,7 +9,7 @@ const router = express.Router();
 router.get('/:docId', checkToken, async (req, res) => {
     const userId = req.user.userId;
     const docId = req.params.docId;
-    const userEmail = req.user.email; 
+    const userEmail = req.user.email;
 
     try {
         // Kalla på getDocumentById i docModel
@@ -24,6 +24,7 @@ router.get('/:docId', checkToken, async (req, res) => {
 
         // Kontrollera om användarens email finns i allowed_users
         const allowedUsers = result.doc.allowed_users;
+
         if (!allowedUsers.includes(userEmail)) {
             return res.status(403).json({
                 message: 'Access denied: You do not have permission to view this document',

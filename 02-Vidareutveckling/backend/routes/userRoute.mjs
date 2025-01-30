@@ -19,7 +19,7 @@ router.post('/register', async (req, res) => {
         // Om användaren redan finns
         if (result.message === 'User already exists') {
             return res.status(409).json({
-                message: result.message 
+                message: result.message
             });
         }
 
@@ -50,16 +50,17 @@ router.post('/login', async (req, res) => {
     try {
         // Hämta användaren från databasen med hjälp av e-post
         const user = await userModel.findUserByEmail(email);
-        
+
         // Om användaren inte finns
         if (!user) {
             return res.status(404).json({
                 message: 'User not found',
             });
         }
-        
+
         // Kontrollera lösenordet
         const isMatch = await bcrypt.compare(password, user.password);
+
         if (!isMatch) {
             return res.status(401).json({
                 message: 'Invalid credentials',
@@ -93,7 +94,7 @@ router.get('/user', checkToken, async (req, res) => {
     try {
         // Hämta användaren från databasen baserat på e-posten
         const user = await userModel.findUserByEmail(email);
-        
+
         if (!user) {
             return res.status(404).json({
                 message: 'User not found',

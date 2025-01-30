@@ -66,7 +66,7 @@ const docModel = {
                     message: 'Delete document failed',
                 };
             }
-    
+
             // Returnera lyckat resultat
             return {
                 message: 'Document deleted successfully',
@@ -162,8 +162,10 @@ const docModel = {
     // Dela dokument
     shareDocument: async (email, docId, baseUrl) => {
         let db = await mongodb.getDb();
-        const urlForRegister = `${baseUrl}/register`; // länk till registrering
-        const urlForSharedDoc = `${baseUrl}/view_shared_document/${docId}`; // länk till delat dokument
+        // länk till registrering
+        const urlForRegister = `${baseUrl}/register`;
+        // länk till delat dokument
+        const urlForSharedDoc = `${baseUrl}/view_shared_document/${docId}`;
 
         try {
             // Skicka email med ovan länk

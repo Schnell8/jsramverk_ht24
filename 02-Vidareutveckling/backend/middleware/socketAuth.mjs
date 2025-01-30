@@ -10,6 +10,7 @@ const verifySocketToken = (socket, next) => {
 
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET); // veifiera token
+
         socket.user = decoded; // lagra användare
         next();
     } catch (error) {
