@@ -43,13 +43,28 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 -----------------------------
 
 ## Routes
-Use localhost:3000 or [student-url](https://www.student.bth.se/~chsc22/editor/) in browser to have a look.
+Use localhost:3000 or [student-url](https://www.student.bth.se/~chsc22/editor/) in browser to have a look. (student-url not available)
 
 ### /
-Home page listing all documents with options to update or delete.
+Page to navigate to either register or login.
 
-### /create
-Form to add document.
+### /register
+Page to register.
 
-### /update/:id
-Form to update document with given ID.
+### /login
+Page to login.
+
+### /home
+Home page with document overview. Options to add, share, edit or delete a document.
+
+### /home/add_document
+Page to add document to user.
+
+### /home/share_document/:docId
+Page to share document with desired email. You will recieve a link to the shared document.
+
+### /home/edit_document/:docId
+Page to edit document.
+
+### /view_shared_document/:docId
+Page to view and edit document. Only available to people you have shared the document with.
