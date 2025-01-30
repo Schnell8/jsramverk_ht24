@@ -1,0 +1,71 @@
+.btn {
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    font-size: 1.35em;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn.auth {
+    width: 300px;
+    font-size: 36px;
+    padding: 12px 24px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.btn.auth:hover {
+    background-color: #c0c0c0;
+}
+
+.btn.red {
+    background-color: #f44336; /* Red */
+}
+
+.btn.red:hover {
+    background-color: #b82d2b;
+}
+
+.btn.green {
+    background-color: #4CAF50; /* Green */
+}
+
+.btn.green:hover {
+    background-color: #317c35;
+}
+
+.btn.blue {
+    background-color: #2196F3; /* Blue */
+}
+
+.btn.blue:hover {
+    background-color: #186bb4;
+}
+
+.btn.yellow {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+}
+
+.btn.yellow:hover {
+    background-color: #c49405;
+}
+
+
+.btn.clear {
+    background-color: #d7d7d7; /* clear */
+    color: #333;
+}
+
+.btn.clear:hover {
+    background-color: #c0c0c0;
+}
+
+.small {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
