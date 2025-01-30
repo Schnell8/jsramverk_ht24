@@ -23,7 +23,7 @@ In the project directory, you can run these commands in terminal:
 Runs the app in the development mode.
 
 ### `npm test`
-Launches the test runner in the interactive watch mode.
+Launches the test runner in the interactive watch mode. (No tests for 02-Vidareutveckling)
 
 ### `npm run build`
 Builds the app for production to the `build` folder.

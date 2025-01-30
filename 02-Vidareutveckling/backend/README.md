@@ -39,7 +39,7 @@ Runs the app.
 Runs the app in development mode.
 
 ### `npm test`
-Runs tests along with eslint. Mongodb needs to be up and running for test to work.
+Runs tests along with eslint. Mongodb needs to be up and running for test to work. (No tests for 02-Vidareutveckling)
 
 -----------------------------
 
