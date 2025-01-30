@@ -44,7 +44,7 @@ Runs tests along with eslint. Mongodb needs to be up and running for test to wor
 -----------------------------
 
 ## API routes
-Use localhost:1337 or [azure-url](https://jsramverk-chsc22-ace2bxdsdxfnavfc.northeurope-01.azurewebsites.net/) in browser to have a look.
+Use localhost:1337 or [azure-url](https://jsramverk-chsc22-ace2bxdsdxfnavfc.northeurope-01.azurewebsites.net/) in browser to have a look. (azure-url not available at the moment)
 
 ### GET /
 Available routes shown.

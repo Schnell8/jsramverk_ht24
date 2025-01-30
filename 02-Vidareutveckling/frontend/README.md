@@ -43,7 +43,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 -----------------------------
 
 ## Routes
-Use localhost:3000 or [student-url](https://www.student.bth.se/~chsc22/editor/) in browser to have a look. (student-url not available)
+Use localhost:3000 or [student-url](https://www.student.bth.se/~chsc22/editor/) in browser to have a look. (student-url not available at the moment)
 
 ### /
 Page to navigate to either register or login.
